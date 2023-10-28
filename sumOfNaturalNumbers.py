@@ -1,13 +1,15 @@
-# Sum of natural numbers up to num
+num=int(input("Enter A Natural Number:")) #To take user input for natural number.
 
-num = 16
+sum=0 #Intialization of counter.
 
-if num < 0:
-    print("Enter a positive number")
+if (num < 0):
+
+    print("** Error!!! Check Your Input.**") #If input isn't a natural number, this statement will be print. 
+
 else:
-    sum = 0
-    # use while loop to iterate until zero
-    while num > 0:
-        sum += num
-        num -= 1
-    print("The sum is", sum)
+
+    for i in range(1,num,-1):
+
+        sum=sum+num #Process of the counter.
+
+    print("The sum of first", num ,"natural numbers is: ",sum) #To print the final statement.
